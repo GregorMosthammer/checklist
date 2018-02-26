@@ -32,8 +32,23 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+
+<nav class="navbar navbar-light bg-faded">
+  <div class="row">
+  <div class="col-lg-2">
+  <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="/img\logo.png" alt="LOGO" width="100%" height="50px">
+                    </a>
+  </div>
+  </div>
+</nav>
+
+
+
+
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse bg-inverse">
             <div class="container">
                 <div class="navbar-header">
 
@@ -47,7 +62,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    CodeFactory
                     </a>
                 </div>
 

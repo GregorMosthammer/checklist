@@ -21,7 +21,7 @@
 <div class="row">
 
 <div class="col-lg-offset-3 col-lg-6">
-<h2 style="color: #831213;">Refer a friend and receive 10% off your cost up to $10,000</h2>
+<h2 style="color: #831213; font-family: Chivo !important">Get a new career and the experience of a lifetime </h2>
 </div>
 </div>
 
@@ -30,7 +30,7 @@
 </div>
 
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-    <h3 style="color: #831213;">The Package:</h3>
+    <h3 style="color: #831213; font-family: Chivo !important">The Package:</h3>
     <ul>
         <li>4 Months Full-Time Course in Vienna</li>
         <li>Housing and Flights</li>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-    <h3 style="color: #831213;">Additional Perks:</h3>
+    <h3 style="color: #831213; font-family: Chivo !important">Additional Perks:</h3>
     <ul>
         <li>Graduation in Salzburg, Austria</li>
         <li>Food and Insurance</li>
@@ -61,25 +61,25 @@
 
 
 <div class="row">
-<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#831213; border: 1px solid black;">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#831213; border-bottom: 1px solid black;">
 
 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 <br>
 <img src="/img\chris.png" alt="CTO" width="100%" height="100%">
 </div>
 <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-<h3 style="color: white;">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
-<h3 style="font-style: italic; color: white;"> -Christoph Pirringer <br> CTO</h3>
+<h3 style="color: white; font-family: Chivo !important">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
+<h3 style="font-style: italic; color: white; font-family: Chivo !important"> -Christoph Pirringer <br> CTO</h3>
 </div>
 </div>
 </div>
 
 
 <div class="row">
-<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#831213; border: 1px solid black;">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#831213;">
 <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-<h3 style="color: white;">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
-<h3 style="font-style: italic; color: white;"> -Simona Mirauta</h3>
+<h3 style="color: white; font-family: Chivo !important">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
+<h3 style="font-style: italic; color: white; font-family: Chivo !important"> -Simona Mirauta</h3>
 </div>
 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 <br>
@@ -95,7 +95,7 @@
 <div class="row">
 
 <div class="col-lg-7 col-lg-offset-1">
-<h2 style="color: #831213;">What are you waiting for?</h2>
+<h2 style="color: #831213; font-family: Chivo !important">What are you waiting for?</h2>
     <ul>
     <li>Average Full-Stack Developer Salary $88,488</li>
     <li>Life Changing Experience</li>
@@ -107,7 +107,7 @@
     
 
     <div class="col-lg-3">
-    <h3 style="color: #831213;">Get a new career and the experience of a lifetime </h3>  
+    <h3 style="color: #831213; font-family: Chivo !important">Refer a friend and receive 10% off your cost up to $10,000</h3>  
 </div>
 </div>
 
@@ -117,11 +117,11 @@
     </div>
 
     <div class="col-lg-offset-2 col-lg-8">
-    <h2 style="color: #831213;">Contact Us Here:</h2>
+    <h2 style="color: #831213; font-family: Chivo !important">Contact Us Here:</h2>
     <br>
     <h4><a href="https://www.facebook.com/CodeFactoryVienna/">https://www.facebook.com/CodeFactoryVienna/</a></h4>
     <h4>office@codefactory.wien</h4>
-    <h4 style="color: #831213; float:right">+43 699 12255185</h4>
+    <h4 style="color: #831213;">+43 699 12255185</h4>
     <br>
     <img src="/img\logo.png" alt="LOGO" width="330px" height="120px">
     </div>
