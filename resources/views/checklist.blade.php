@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
+        <title>Laravel</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-        <title>Laravel</title>
-
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
- <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
 
@@ -29,7 +21,7 @@
   <div class="col-lg-2">
   <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/img\logo.png" alt="LOGO" width="100%" height="50px">
-                    </a>
+</a>
   </div>
   </div>
 </nav>
@@ -54,6 +46,8 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                     CodeFactory
                     </a>
+
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -86,8 +80,7 @@
                                         </form>
                                     </li>
                                     <li><a href="{{ url('/checklist') }}">checklist</a></li>
-                               
-                            
+
                         @endif
                     </ul>
                 </div>
@@ -97,19 +90,15 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+  <button class="tablinks" onclick="openCity(event, 'Apply')">Apply</button>
+  <button class="tablinks" onclick="openCity(event, 'Passport')">Passport</button>
+  <button class="tablinks" onclick="openCity(event, 'Finance')">Finance / Insurance</button>
+  <button class="tablinks" onclick="openCity(event, 'Visa')">Visa</button>
 
-
-
-
-
-
-
+<div id="Apply" class="tabcontent">
+<script src="{{ asset('js/app.js') }}"></script>
 <form action="/insert" method="post">
-
 {{csrf_field()}}
-
 Firstname
 <input type="text" name="firstname"></br>
 Lastname
@@ -132,14 +121,12 @@ Country
 <input type="text" name="country"></br>
 Essay
 <textarea name="essay" rows="5" cols="40"></textarea></br>
-
 <input type="submit" name"submit" value="Add">
-
 </form>
+</div>
 
-<br><br>
 
-Passport<br>
+<div id="Passport" class="tabcontent">
 Do you have a passport?
 <form action="/insert_passport" method="post">
 {{csrf_field()}}
@@ -154,10 +141,9 @@ What you need for a passport
 <a href="https://www.usps.com/international/passports.htm">Link</a>
 </div>
 </form>
+</div>
 
-<br><br>
-
-Financing<br>
+<div id="Finance" class="tabcontent">
 (You must have financing available or be approved for financing in order to obtain your VISA. 
 We recommend getting approved, getting your VISA, and then taking the loan out.)
 <form action="/insert_financing" method="post">
@@ -179,10 +165,8 @@ b.i.5. https://apply.santanderbank.com/personal/forms/ploan.aspx
 b.i.6. https://www.marcus.com/us/en
 b.i.7. Credit Card
 </div>
-
-</form>
-<br><br>
-Insurance<br>
+<br>
+<br>
 Insurance form filled out
 <form action="/insert_insurance" method="post">
 {{csrf_field()}}
@@ -198,6 +182,17 @@ No
 Info info info
 </div>
 </form>
+
+</div>
+
+
+<div id="Visa" class="tabcontent">
+
+
+VISAAAAAAAAAAAA
+
+
+
 
 
 </body>
@@ -262,6 +257,20 @@ $(function () {
             $('#insuranceDiv').fadeOut( "slow", function() {});
         });
     });
+
+function openCity(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
     </script>
 
