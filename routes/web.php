@@ -43,14 +43,14 @@ Route::get('/admin', function()
 {
 $students = App\Students::all();
 return view('admin',compact('students')); 
-});
+})->name('admin.dashboard');;
 
 Route::post('/detail',array('as' => 'admin.detail', function()
       {
   $students = App\Students::all();
   $users = App\User::all();
   return view('admin',compact('students', 'users')); 
-}))->name('admin.dashboard');
+}));
 
 
  Route::get('/detail',array('as' => 'admin.detail',  function()

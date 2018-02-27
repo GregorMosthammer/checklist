@@ -3,6 +3,7 @@
 @extends('layouts.app')
 
 @section('content')
+@if (Auth::guard('admin')->check())
 <div class="container">
 <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -36,9 +37,12 @@
         <td><a href="#">details...</a></td>
       </tr>
    
-      
-     @endforeach
+      @endforeach
       </tbody>
   </table>
 </div>
+@else
+ <script>window.location = "/admin/login";</script> 
+
+@endif
 @endsection
