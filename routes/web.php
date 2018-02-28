@@ -49,7 +49,7 @@ Route::post('/detail',array('as' => 'admin.detail', function()
       {
   $students = App\Students::all();
   $users = App\User::all();
-  return view('admin',compact('students', 'users')); 
+  return view('detail',compact('students', 'users')); 
 }));
 
 
