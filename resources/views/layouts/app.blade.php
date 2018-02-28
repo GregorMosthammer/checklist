@@ -96,6 +96,7 @@
                                         </form>
                                     </li>
                                     <li><a href="{{ url('/checklist') }}">checklist</a></li>
+                                    <li><a href="{{ url('/myaccount') }}">myaccount</a></li>
                                
                             
                         @endif

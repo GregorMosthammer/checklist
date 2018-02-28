@@ -59,3 +59,9 @@ Route::post('/detail',array('as' => 'admin.detail', function()
   $users = App\User::all();
   return view('detail',compact('students', 'users')); 
 }));
+
+
+
+Route::get('/myaccount', function () {
+  return view('myaccount');
+  })->name('myaccount');
