@@ -90,39 +90,103 @@
         @yield('content')
     </div>
 
-  <button class="tablinks" onclick="openCity(event, 'Apply')">Apply</button>
-  <button class="tablinks" onclick="openCity(event, 'Passport')">Passport</button>
-  <button class="tablinks" onclick="openCity(event, 'Finance')">Finance / Insurance</button>
-  <button class="tablinks" onclick="openCity(event, 'Visa')">Visa</button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center">
+     <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-one" onclick="openCity(event, 'Apply')">Step 1 Application</a> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-two" onclick="openCity(event, 'Passport')">Step 2 Passport</a> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-three" onclick="openCity(event, 'Finance')"> Step 3 Finance and Insurance</a> </div>
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-four" onclick="openCity(event, 'Visa')" >Step 4 Visa</a> </div>
+  </div>
+</div>
 
-<div id="Apply" class="tabcontent">
+<div class="container-fluid">
+  <div class="row">
+    <div id="Apply" class="col-md-12 tabcontent">  
 <script src="{{ asset('js/app.js') }}"></script>
+<div class="col-md-2">
+</div>
+<div class="col-md-8">
 <form action="/insert" method="post">
 {{csrf_field()}}
-Firstname
-<input type="text" name="firstname"></br>
-Lastname
-<input type="text" name="lastname"></br>
-Phonenumber
-<input type="text" name="phone"></br>
-Occupation
-<input type="text" name="occupation"></br>
-Birthdate
-<input type="date" name="birthdate"></br>
-Street
-<input type="text" name="street"></br>
-Streetnumber
-<input type="number" name="street_number"></br>
-Postelcode
-<input type="number" name="plz"></br>
-City
-<input type="text" name="city"></br>
-Country
-<input type="text" name="country"></br>
-Essay
-<textarea name="essay" rows="5" cols="40"></textarea></br>
-<input type="submit" name"submit" value="Add">
+
+<div class="row">
+<div class="col-lg-6" class="form-group">
+    <label>Firstname</label>
+    <input type="text" class="form-control"  name="firstname">
+</div>
+
+<div class="col-lg-6" class="form-group">
+    <label>Lastname</label>
+    <input type="text" class="form-control"  name="lastname">
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-6" class="form-group">
+    <label>Phonenumber</label>
+    <input type="text" class="form-control"  name="phone">
+</div>
+
+<div class="col-lg-6" class="form-group">
+    <label>Occupation</label>
+    <input type="text" class="form-control"  name="occupation">
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-6" class="form-group">
+    <label>Birthdate</label>
+    <input type="date" class="form-control"  name="birthdate">
+</div>
+
+<div class="col-lg-6" class="form-group">
+    <label>Street</label>
+    <input type="text" class="form-control"  name="street">
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-6" class="form-group">
+    <label>Streetnumber</label>
+    <input type="number" class="form-control"  name="street_number">
+</div>
+
+<div class="col-lg-6" class="form-group">
+    <label>Postelcode</label>
+    <input type="number" class="form-control"  name="plz">
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-6" class="form-group">
+    <label>City</label>
+    <input type="text" class="form-control"  name="city">
+</div>
+
+<div class="col-lg-6" class="form-group">
+    <label>Country</label>
+    <input type="text" class="form-control"  name="country">
+</div>
+</div>
+
+<div style="margin-top: 10px;" class="row">
+<div class="col-lg-12" class="form-group">
+<textarea class="form-control" name="essay" rows="5" cols="40" placeholder="please write a short essay"></textarea>
+</div>
+</div>
+
+<div style="margin-top: 10px;" class="row">
+<div class="col-md-5">
+</div>
+<input class="btn-lg btn-primary col-md-2" type="submit" name"submit" value="Add">
+</div>
+<div class="col-md-5">
+</div>
 </form>
+</div>
+<div class="col-md-2">
+</div>
 </div>
 
 
